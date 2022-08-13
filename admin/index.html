@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8"/>
+<title>Payerfeed | Admin Dashboard</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<meta name="MobileOptimized" content="320">
+
+<!-- BEGIN THEME STYLES -->
+<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="./assets/css/custom.css">
+<link rel="stylesheet" href="./assets/css/responsive.css">
+<!-- END THEME STYLES -->
+
+<link rel="shortcut icon" href="favicon.ico"/>
+
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-dashboard">
+<!-- BEGIN LAYOUT -->
+    <div class="layout-wrapper">
+        <!-- BEGIN HEADER -->
+        <header id="page-topbar" class="topbar-shadow">
+            <div class="layout-width">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                            <span class="hamburger-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </button>
+                    </div>
+        
+                    <div class="d-flex align-items-center">
+                        <div class="ms-sm-3 header-item topbar-user">
+                            <a href="/admin/profile.html" class="btn admin-btn" id="page-header-user-dropdown">
+                                <span class="d-flex align-items-center">
+                                    <img class="rounded-circle header-profile-user" src="assets/images/user/profile.png" alt="Header Avatar">
+                                    <span class="text-start ms-xl-2">
+                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">UI Designer</span>
+                                        <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Joined 6 month ago</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER -->
+        <!-- START SIDEBAR MENU -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <!-- Dark Logo-->
+                <div class="navbar-brand-box">
+                    <a href="/admin/index.html" class="logo logo-dark">
+                        <span class="logo-lg">
+                            <img src="./assets/images/logo/dark-logo.png" alt="" height="70">
+                        </span>
+                    </a>
+                </div>
+                <!-- Light Logo-->
+                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+                    id="vertical-hover">
+                    <i class="ri-record-circle-line"></i>
+                </button>
+            </div>
+            <div class="sidebar">
+                <div class="sidebar-menu">
+                    <ul class="nav nav-tabs" id="nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/admin/index.html">
+                                <i class="dashboard-icon"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/admin/profile.html">
+                                <i class="home-icon"></i>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END SIDEBAR MENU -->
+        <!-- START MAIN CONTENT -->
+        <div class="main-content margin-top-100 margin-left-120">
+            <div class="main-content-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card-content">
+                                <img src="../admin/assets/images/icons/offer.png" alt="">
+                                <div class="content-payment">
+                                    <h3>ESCROW OFFER</h3>
+                                    <p class="offer-title">1</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card-content">
+                                <img src="../admin/assets/images/icons/pay.png" alt="">
+                                <div class="content-payment">
+                                    <h3>Payment in escrow</h3>
+                                    <p class="offer-title">$100</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <!-- Modal Start -->
+                    <div class="user-profile modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="profile-modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        
+                                        <div class="profile-main">
+                                            
+                                            <div class="profile-detail">
+                                                <div class="profile-image">
+                                                    <div class=" align-items-center">
+                                                        <img class="rounded-circle" width="100px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+                                                    </div>
+                                                </div>
+                                                <div class="profile-name">
+                                                    <h4 class="title">Kevin Heart</h4>
+                                                    <p class="sub-title">(User Since : 15-Aug-2020)</p>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content mt-3">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="kt-card height250">
+                                                                <div class="profile-account text-center">
+                                                                    <img src="./assets/images/icons/add-user.png" alt="">
+                                                                    <h4 class="title">Accounts Bought / Sold</h4>
+                                                                    <p class="sub-title">7</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="kt-card height250">
+                                                                <div class="profile-account text-center">
+                                                                    <img src="./assets/images/icons/coins.png" alt="">
+                                                                    <h4 class="title">Money spent on Payerfeed</h4>
+                                                                    <p class="sub-title">$3400</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal End -->
+                    <!-- Step 1-->
+                    <div id="step-1" class="row step active">
+                        <div class="col-sm-12">
+                            <div class="kt-card">
+                                <div class="offer-bg">
+                                    <div class="offer-detail">
+                                        <h3 class="offer-detail-title">Offer</h3>
+                                        <div class="offer-content">
+                                            <p>
+                                                <span>Item Name : </span>
+                                                <span>Dog are Cute</span>
+                                            </p>
+                                            <p>
+                                                <span>Item Link : </span>
+                                                <span>www.facebook.com/dogsarecute</span>
+                                            </p>
+                                            <p>
+                                                <span>Price : </span>
+                                                <span>$200</span>
+                                            </p>
+                                            <p>
+                                                <span>Buyer : </span>
+                                                <span>Kevin Heart</span>
+                                                <span class="ml-3"><a class="btn btn-blue btn-profile" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">View Profile</a></span>
+                                            </p>
+                                        </div>
+                                        <div class="button">
+                                            <button type="button" class="btn btn-orange"> Reject</button>
+                                            <button type="button" class="next next btn btn-blue"> Accept</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Step 2-->
+                    <div id="step-2" class="row step hide">
+                        <div class="col-sm-12">
+                            <div class="kt-card">
+                                <div class="offer-bg">
+                                    <div class="offer-detail">
+                                        <h3 class="offer-detail-title">You have accepted the offer</h3>
+                                        <form action="#" class="form">
+                                            <div class="offer-payment-form">
+                                                <p class="title">Pick your payment method:</p>
+                                                <div class="mb-4 mt-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="paymentMethod" id="bankWire" checked>
+                                                        <label class="form-check-label" for="bankWire">
+                                                            Bank Wire
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="paymentMethod" id="paypal">
+                                                        <label class="form-check-label" for="paypal">
+                                                            Paypal
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="paymentMethod" id="bitcoin">
+                                                        <label class="form-check-label" for="bitcoin">
+                                                            Bitcoin
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="paymentMethod" id="paytmWallet">
+                                                        <label class="form-check-label" for=" paytmWallet">
+                                                            Paytm Wallet
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="paymentMethod" id="westernUnion">
+                                                        <label class="form-check-label" for="westernUnion">
+                                                            Western Union
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-5 border-top ">
+                                                    <p class="title mt-4">Pick your payment method:</p>
+                                                    <div class="mb-3 mt-3">
+                                                        <input type="text" class="form-control"
+                                                            id="exampleFormControlInput1"
+                                                            placeholder="Bank Account Holder Name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="text" class="form-control"
+                                                            id="exampleFormControlInput1" placeholder="Account Number">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="text" class="form-control"
+                                                            id="exampleFormControlInput1" placeholder="Swift Code">
+                                                    </div>
+                                                </div>
+                                                <div class="button">
+                                                    <button type="button" class="btn next btn-blue next">
+                                                        Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3-->
+                    <div id="step-3" class="row step hide">
+                        <div class="col-sm-12">
+                            <div class="kt-card">
+                                <div class="offer-bg">
+                                    <div class="offer-detail">
+                                        <h3 class="offer-detail-title">Offer</h3>
+                                        <div class="offer-content">
+                                            <p>
+                                                <span>Item Name : </span>
+                                                <span>Dog are Cute</span>
+                                            </p>
+                                            <p>
+                                                <span>Item Link : </span>
+                                                <span>www.facebook.com/dogsarecute</span>
+                                            </p>
+                                            <p>
+                                                <span>Price : </span>
+                                                <span>$200</span>
+                                            </p>
+                                            <p>
+                                                <span>Buyer : </span>
+                                                <span>Kevin Heart</span>
+                                                <span class="ml-3"><a class="btn btn-blue btn-profile" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">View Profile</a></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="offer-instruction mt-3 border-top">
+                                    <h3 class="offer-detail-title pt-5">Instruction</h3>
+                                    <div class="offer-content">
+                                        <ul class="instruction-list">
+                                            <li>
+                                                <p>Send a friend request to our agent (account link) wait until he
+                                                    accepts it.</p>
+                                            </li>
+                                            <li>
+                                                <p>Once you are friends, add him as an admin</p>
+                                            </li>
+                                            <li>
+                                                <p>Remove yourself as admin</p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Click on “Deliver” , agent will review the process your payment will
+                                                    be sent
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="button mt-2">
+                                    <button type="button" class="btn next btn-blue"> Deliver</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 4-->
+                    <div id="step-4" class="row step hide">
+                        <div class="col-sm-12">
+                            <div class="kt-card">
+                                <div class="offer-bg">
+                                    <div class="offer-detail">
+                                        <h3 class="offer-detail-title">Offer</h3>
+                                        <div class="offer-content">
+                                            <p>
+                                                <span>Item Name : </span>
+                                                <span>Dog are Cute</span>
+                                            </p>
+                                            <p>
+                                                <span>Item Link : </span>
+                                                <span>www.facebook.com/dogsarecute</span>
+                                            </p>
+                                            <p>
+                                                <span>Price : </span>
+                                                <span>$200</span>
+                                            </p>
+                                            <p>
+                                                <span>Buyer: </span>
+                                                <span>Kevin Heart</span>
+                                                <span class="ml-3"><a class="btn btn-blue btn-profile" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">View Profile</a></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="offer-instruction mt-3 border-top">
+                                    <h3 class="offer-detail-title pt-5">Waiting for review</h3>
+                                    <div class="offer-content">
+                                        <p>
+                                            Your delivery is being reviewed, please wait for up to 12 hours, then your
+                                            payment will be sent.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+        <!-- START FOOTER -->
+        <div class="footer">
+            <div class="footer-inner">
+                Copyright © 2022 All Rights Reserved By Payerfeed.
+            </div>
+        </div>
+        <!-- END FOOTER -->
+        
+    </div>
+<!-- END LAYOUT -->
+
+
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.5/umd/popper.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/custom-main.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<!-- END PAGE LEVEL SCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>
